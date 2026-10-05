@@ -1,4 +1,12 @@
-// CONFIGURA AQUÍ TU NÚMERO DE TELEFONO CON CÓDIGO DE PAÍS (sin el signo +)
+// Oculta la intro al terminar de cargar la página
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const intro = document.getElementById('intro-screen');
+    if (intro) {
+      intro.classList.add('hidden');
+    }
+  }, 1800); // 1.8 segundos de intro (puedes ajustar el tiempo aquí)
+});// CONFIGURA AQUÍ TU NÚMERO DE TELEFONO CON CÓDIGO DE PAÍS (sin el signo +)
 const NUMERO_WHATSAPP = "573218747258"; // Reemplaza por tu número real
 
 // DICCIONARIO DE TRADUCCIONES MULTI-IDIOMA
